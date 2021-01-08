@@ -78,6 +78,7 @@ public class ProfileInfo extends AppCompatActivity {
                 userMap.put("UID",uid);
                 userMap.put("name",name);
                 userMap.put("imageURL",downloadUrl);
+                userMap.put("status","offline");
 
                 myRef.setValue(userMap).addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
